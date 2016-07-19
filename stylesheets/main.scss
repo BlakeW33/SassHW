@@ -1,0 +1,27 @@
+$default-orange: #e62e00;
+body{background-color:$default-orange;}
+//variable
+$default-yellow: #ffff00;
+p{background-color:$default-yellow;}
+//variable
+@import 'main-1';
+
+.list-style-type-circle{
+	background-color:$default-yellow;
+}
+//at this point I decided that I also wanted something like it but with a different font 
+//size
+
+.list-style-type-square{
+	@extend .list-style-type-circle;
+	font-size: 40pt;
+}
+
+nav{
+	ul{
+	font-size: 12pt;
+		li{
+		background-color:blue;
+		}
+	}
+}
